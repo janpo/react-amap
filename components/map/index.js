@@ -124,6 +124,7 @@ class BaseMap extends Component<MapProps, {mapLoaded: boolean}> {
       this.pluginMap = {}
       new APILoader({
         key: props.amapkey,
+        lang:props.lang,
         useAMapUI: props.useAMapUI,
         version: props.version,
         protocol: props.protocol
